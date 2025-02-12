@@ -1,0 +1,115 @@
+.body-root {
+    background-color: #1a1a2e;
+    color: #ff99cc;
+    font-family: 'Cascadia Code', monospace;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.terminal-root {
+    background-color: #0f0f0f;
+    color: #ff99cc;
+    font-family: 'Cascadia Code', monospace;
+    width: 96vw;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.terminal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    border-bottom: 1px solid #3d3d3d;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.terminal-header-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.terminal-header-button {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.red {
+    background-color: hsl(0, 100%, 54%);
+}
+
+.yellow {
+    background-color: hsl(50, 100%, 54%);
+}
+
+.green {
+    background-color: hsl(100, 100%, 54%);
+}
+
+.terminal-header-title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff99cc;
+    user-select: none;
+}
+
+.terminal-body {
+    flex-grow: 1;
+    padding: 16px;
+    overflow-y: auto;
+    color: #00ff7f;
+    max-height: 85vh;
+}
+
+.terminal-line {
+    display: block;
+    white-space: pre-wrap;
+}
+
+.terminal-line .command {
+    color: #ff99cc;
+}
+
+.terminal-line .output {
+    color: #ddd;
+}
+
+.terminal-input {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+}
+
+.terminal-input-text {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: #ff99cc;
+    font-family: 'Cascadia Code', monospace;
+    font-size: 16px;
+}
+
+.terminal-input-text:focus {
+    border: none;
+    outline: none;
+}
+
+.terminal-root:hover {
+    cursor: text;
+}
