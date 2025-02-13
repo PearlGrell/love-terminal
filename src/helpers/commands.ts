@@ -46,18 +46,19 @@ const ls = `├── skills
 const special_skills = `1 skill found:
 <a href="https://allpoetry.com/Aryan_Trivedi" target="_blank">AllPoetry.com</a>`;
 
-const why_single = `[Bug Report] #404
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Status: Perpetually debugging
-Severity: High
-Assigned to: Future Partner
-Description: Too busy catching exceptions to catch feelings
-Resolution: Seeking someone who can handle my runtime 💝
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`;
+const why_single = `[Why Single]
+━━━━━━━━━━━━━━━━━━━
+Status: Heart not found
+Problem: Studying in engineering college
+Fix: Maybe meet someone cool?
+Requirements: Must enjoy laughter, snacks, and random adventures
+Patch Notes: Open to updates 💕
+━━━━━━━━━━━━━━━━━━━`;
 
 const help = `Available commands:
 ├── hello: Greets you back
 ├── whoami: Displays personal information
+├── time: Displays current time
 ├── ls: Lists all directories
 ├── cd skills: Shows technical skills
 ├── cd hobbies: Shows hobbies
@@ -66,7 +67,7 @@ const help = `Available commands:
 ├── tell-me-a-joke: Tells a joke
 ├── systemctl status relationship: Shows relationship status
 ├── echo why-single: Explains why I'm single
-├── buy-me-a-coffee: Shows how to buy me a coffee
+├── coffee-date: Make a coffee date with me (Don't worry. You can choose)
 ├── clear: Clears the terminal
 └── exit: Exits the terminal`;
 
@@ -81,4 +82,6 @@ export const commands = {
     "systemctl status relationship": `Single and ready to mingle`,
     "echo why-single": why_single,
     "help": help,
+    "coffee-date": "Arranging a coffee date...",
+    "time": `Current time: ${new Date().toTimeString().split(" ")[0]} ${new Date().toDateString()}`,
 };
