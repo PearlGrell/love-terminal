@@ -36,16 +36,22 @@ exit                          Exits the terminal
 
 Clone the repository
 
-`git clone https://github.com/PearlGrell/love-terminal.git
-cd love-terminal`
+```
+git clone https://github.com/PearlGrell/love-terminal.git
+cd love-terminal
+```
 
 Install dependencies
 
-`npm install`
+```
+npm install
+```
 
 Start the development server
 
-`npm run dev`
+```
+npm run dev
+```
 
 ## 📞 Contact
 
